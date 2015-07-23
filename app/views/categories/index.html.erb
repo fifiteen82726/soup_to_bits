@@ -5,7 +5,9 @@
 	<% @categories.each do |c| %>
 	<li> <%= link_to c.name, c %> (<%= c.soups.count %>) </li> 	
 
+	<% end %> 
+	<% if session[:vip] == true %>
+	<li> Super BBB</li>
 	<% end %>
-
 
 </ul>
